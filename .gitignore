@@ -1,0 +1,30 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Build artifacts
+build/
+dist/
+
+# Log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+lerna-debug.log
+
+# dotenv environment variables file
+.env
+
+# Cache files
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+.eslintcache
+.cache
+.parcel-cache
+.npm
+
+# VS Code editor-related files
+.vscode-test/
+.vscode/
