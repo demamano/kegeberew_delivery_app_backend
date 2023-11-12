@@ -23,6 +23,7 @@ const createOrder = async (req, res) => {
                 delivered: req.body.delivered
             }
         });
+        order.markModified('status');
         if (order) {
             res.status(200).json({ data: order, message: "Order created successfully" });
         }

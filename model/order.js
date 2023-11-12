@@ -17,10 +17,12 @@ const orderSchema = new Schema({
     status: {
       fulfilled: {
         type: Boolean,
+        required: true
         
       },
       delivered: {
         type: Boolean,
+        required: true
        
       }
     }
