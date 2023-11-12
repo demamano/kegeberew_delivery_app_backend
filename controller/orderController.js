@@ -19,11 +19,11 @@ const createOrder = async (req, res) => {
             phoneNumber: req.body.phoneNumber,
             name: req.body.name,
             status: {
-                fulfilled: req.body.fulfilled,
-                delivered: req.body.delivered
+              fulfilled: req.body.status.fulfilled,
+              delivered: req.body.status.delivered
             }
-        });
-        order.markModified('status');
+          });
+       
         if (order) {
             res.status(200).json({ data: order, message: "Order created successfully" });
         }
